@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB Color Values</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <!-- <script src="script.js" defer></script> -->
+    <script src="script1.js" defer></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="show-color">
+            <!-- show color here -->
+            <h3>RGB(<span id="R-value">0</span>, <span id="G-value">0</span>, <span id="B-value">0</span>)</h3>
+            <!-- <button type="button" id="copyText">Copy</button> -->
+            <!-- <h3>RGBA(<span id="R-value">0</span>, <span id="G-value">0</span>, <span id="B-value">0</span>, <span id="A-value">0</span>)</h3> -->
+        </div>
+        <div class="red-value-container separate-color-container">
+            <label for="red-value">Red Value</label><br>
+            <input type="range" class="red-value-class" id="red-value" min="0" max="255" value="0">
+        </div>
+        <div class="green-value-container separate-color-container">
+            <label for="green-value">Green Value</label><br>
+            <input type="range" class="green-value-class" id="green-value" min="0" max="255" value="0">
+        </div>
+        <div class="blue-value-container separate-color-container">
+            <label for="blue-value">Blue Value</label><br>
+            <input type="range" class="blue-value-class" id="blue-value" min="0" max="255" value="0">
+        </div>
+        <!-- <div class="alpha-value-container separate-color-container">
+            <label for="alpha-value">Alpha Value</label><br>
+            <input type="range" class="alpha-value-class" id="alpha-value" min="0" max="1" value="0">
+        </div> -->
+    </div>
+    <footer>
+        <a href="information.html" target="_blank" title="Developer">Developer</a>
+    </footer>
+</body>
+
+</html>
+
+<!-- 
+static copyHexColorCode() {
+    /* Get the text field */
+    let copyText = document.getElementById(".show-color h3").innerHTML
+  
+    /* Select the text field */
+    copyText.select();
+    copyText.setSelectionRange(0, 99999) /* For mobile devices */
+  
+     /* Copy the text inside the text field */
+    navigator.clipboard.writeText(copyText.value)
+  
+    /* Alert the copied text */
+    alert("Copied the text: " + copyText.value)
+  }
+document.querySelector(".show-color button").addEventListener("click", () => HexColorCode.copyHexColorCode()) -->
